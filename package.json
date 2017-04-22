@@ -4,6 +4,10 @@
   "license": "MIT",
   "author": "Yuusaku Miyazaki <toumin.m7@gmail.com>",
   "homepage": "https://github.com/sutara79/demo-qunit",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sutara79/demo-qunit.git"
+  },
   "engines": {
     "node": ">= 0.6.0"
   },
@@ -11,10 +15,6 @@
     "test": "grunt qunit",
     "uglify": "grunt uglify",
     "coveralls": "grunt coveralls"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/thorst/jquery-idletimer.git"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
