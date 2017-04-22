@@ -1,11 +1,8 @@
 language: node_js
 node_js:
   - "node"
-before_install: 
- - npm install -g grunt-cli
 install: 
- - npm install
-before_script: 
- - grunt
-script: 
- - grunt coveralls
+  - npm install
+script:
+  - npm test
+  - npm run coveralls
