@@ -6,36 +6,63 @@ demo-qunit
 [![dependencies Status](https://david-dm.org/sutara79/demo-qunit/status.svg)](https://david-dm.org/sutara79/demo-qunit)
 [![devDependencies Status](https://david-dm.org/sutara79/demo-qunit/dev-status.svg)](https://david-dm.org/sutara79/demo-qunit?type=dev)
 
-An example of unit test and code coverage for jQuery plugin.
+An example of unit testing and code coverage for jQuery plugin.
 
-## Forked
+
+Forked
+--------------------
+
 https://github.com/thorst/Code-Coverage-Qunit
 
-## Using
-### Packages
-- Grunt
-- [Qunit 1.23.1](http://qunitjs.com/upgrade-guide-2.x/)
-- Instanbul
 
-These versions are very old.  
-I tried to upgrade each versions to use QUnit 2.x, but failed.
+Using
+--------------------
 
-### Services
-- [Travis CI](https://travis-ci.org/sutara79/demo-qunit)
-- [Coveralls](https://coveralls.io/github/sutara79/demo-qunit)
-- [David](https://david-dm.org/sutara79/demo-qunit)
+- [Grunt](https://github.com/gruntjs/grunt), [Qunit 1.23.1](http://qunitjs.com), [PhantomJS and Instanbul](https://github.com/asciidisco/grunt-qunit-istanbul)
+- [Travis CI](https://travis-ci.org/sutara79/demo-qunit), [Coveralls](https://coveralls.io/github/sutara79/demo-qunit), [David](https://david-dm.org/sutara79/demo-qunit)
 
-## Usage
+
+Usage
+--------------------
+
 1. Fork and clone the repo.
 1. Run `npm install` to install all dependencies (including grunt).
 1. Run `npm run` to know what you can do.
 
-## Testing Result
-- [Unit Test](https://sutara79.github.io/demo-qunit/test/)
-- [Code Coverage](https://sutara79.github.io/demo-qunit/coverage/lcov-report/)
+### Unit Testing
+- Browser: Access to [./test/index.html](https://sutara79.github.io/demo-qunit/test/).
+- Command Line: Run `npm test`. You can also get code coverage.
 
-## License
-MIT license
+```
+$ npm test
 
-## Author
+> demo-qunit@0.0.1 test /path/to/folder
+> grunt qunit
+
+Running "qunit:files" (qunit) task
+Testing test/index.html .OK
+>> 3 assertions passed (66ms)
+>> Coverage:
+>> -  Lines: 100%
+>> -  Statements: 100%
+>> -  Functions: 100%
+>> -  Branches: 100%
+
+Done.
+```
+
+### Code Coverage
+Run `npm test` like above.  
+Then access to [./coverage/lcov-report/index.html](https://sutara79.github.io/demo-qunit/coverage/lcov-report/) to get the datails.
+
+
+License
+--------------------
+
+[MIT](https://opensource.org/licenses/MIT)
+
+
+Author
+--------------------
+
 Yuusaku Miyazaki <toumin.m7@gmail.com>
