@@ -38,7 +38,7 @@ module.exports = function(grunt) {
           linesThresholdPct: 0
         }
       },
-      files: ["test/**/*.html"]
+      files: ["test/index.html"]
     },
     coveralls: {
       options: {
